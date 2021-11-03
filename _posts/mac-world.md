@@ -1,4 +1,4 @@
-# 搭建 Mac 环境记录
+# Mac 环境记录
 
 ## 一、安装软件
 
@@ -10,13 +10,13 @@
 
 2. 安装 iTerm 环境
 
-     依赖  brew , 安装 HomeBrew，基于oh-my-zsh进行配置：
+    依赖  [brew](https://brew.sh/) , 安装 Homebrew，基于 [oh-my-zsh](https://ohmyz.sh/) 进行配置
 
     安装插件
 
-        1）zsh-autosuggestions
+        1）[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-        2）zsh-syntax-highlighting
+        2）[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
     参考文章：[https://sspai.com/post/63241](https://sspai.com/post/63241)
 
@@ -34,4 +34,3 @@ xcode 安装参考： [https://cloud.tencent.com/developer/article/1332172](http
 
 1. `CTRL + SHIFT + Power`(或`Eject` 键盘右上角键）
 2. `CTRL + CMD + Q` 立即锁定屏幕
-
