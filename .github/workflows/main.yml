@@ -13,6 +13,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      VITE_GITHUB_ACCESS_TOKEN_PART1: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART1 }}
+      VITE_GITHUB_ACCESS_TOKEN_PART2: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART2 }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
