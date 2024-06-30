@@ -16,7 +16,7 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Main />}>
+        <Route path="/blog" element={<Main />}>
           <Route path="" element={<Home />} />
           <Route path="posts" element={<Outlet />}>
             <Route path="" element={<Articles milestone={milestones.posts} />} />
