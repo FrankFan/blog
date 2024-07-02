@@ -30,6 +30,8 @@ jobs:
         env:
           VITE_GITHUB_ACCESS_TOKEN_PART1: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART1 }}
           VITE_GITHUB_ACCESS_TOKEN_PART2: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART2 }}
+          VITE_GITHUB_OWNER: ${{ secrets.VITE_GITHUB_OWNER }}
+          VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
