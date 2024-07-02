@@ -26,12 +26,17 @@ jobs:
         run: yarn install
 
       - name: Build project
-        run: yarn build
         env:
           VITE_GITHUB_ACCESS_TOKEN_PART1: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART1 }}
           VITE_GITHUB_ACCESS_TOKEN_PART2: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART2 }}
           VITE_GITHUB_OWNER: ${{ secrets.VITE_GITHUB_OWNER }}
           VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
+          VITE_GITHUB_MILESTONE_POSTS: ${{ secrets.VITE_GITHUB_MILESTONE_POSTS }}
+          VITE_GITHUB_MILESTONE_SNIPPETS: ${{ secrets.VITE_GITHUB_MILESTONE_SNIPPETS }}
+          VITE_ARTICLE_PAGE_SIZE: ${{ secrets.VITE_ARTICLE_PAGE_SIZE }}
+          VITE_COMMENT_PAGE_SIZE: ${{ secrets.VITE_COMMENT_PAGE_SIZE }}
+
+        run: yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
