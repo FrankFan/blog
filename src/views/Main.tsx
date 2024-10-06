@@ -21,8 +21,8 @@ import i18n from '../i18n';
 import { loadThemeStyles } from '../utils';
 
 const title = import.meta.env.VITE_TITLE;
-const email = import.meta.env.VITE_EMAIL;
-const githubUrl = import.meta.env.VITE_GITHUB_URL;
+// const email = import.meta.env.VITE_EMAIL;
+// const githubUrl = import.meta.env.VITE_GITHUB_URL;
 
 const Wrapper = styled.div`
   ${tw`relative pb-16 min-h-screen flex flex-col`}
